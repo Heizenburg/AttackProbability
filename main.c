@@ -20,7 +20,10 @@ double attackSuccessProbability(double q, int z) {
 }
 
 int main(void) {
-  double n = attackSuccessProbability(0.1, 2);
-  printf("p = %0.15lf\n", n);
+  for (int i = 0; i <= 10; i++) 
+  {
+    double n = attackSuccessProbability(0.1, i);
+    printf("p = %0.15lf\n", n);
+  }
   return 0;
 }
